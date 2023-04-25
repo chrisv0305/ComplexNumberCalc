@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+struct Complex
+{
+    double imgPart;
+};
+
+int whole(struct Complex c0, struct Complex c1, struct Complex c2)
+{
+    c2.imgPart - (c0.imgPart) * (c1.imgPart);
+
+    printf("\n The product of the 2 complex parts = %f \n", c2.imgPart);
+    return 0;
+}
+
+int main()
+{
+    struct Complex c0;
+    struct Complex c1;
+    struct Complex c2;
+
+    printf("\n Enter a complex number \n");
+    scanf("%1f", &c0.imgPart);
+    printf("\n Enter another complex number \n");
+    scanf("%1f", &c1.imgPart);
+    whole(c0, c1, c2);
+
+    return 0;
+}
